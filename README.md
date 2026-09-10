@@ -30,7 +30,7 @@ filenames so they line up with the About Me page:
 - `images/gloves.jpg` — Boxing Gloves
 - `images/diploma.jpg` — High School Diploma
 - `images/camera.jpg` — Sony FX3 Camera
-- `images/camp-polaroid.jpg` — 6th Grade Camp Polaroid
+- `images/camp-polaroid.png` — 6th Grade Camp Polaroid
 - `images/mt-lukens.jpg` — Mt. Lukens Summit
 
 Once added, commit and push the changes and the photos will appear on the
