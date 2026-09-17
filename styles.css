@@ -315,6 +315,128 @@ p {
   margin: 0;
 }
 
+/* ---- source panels (primary sources page) --------------------------------- */
+
+.source-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin-top: 32px;
+}
+
+.source {
+  padding: clamp(20px, 4vw, 36px);
+}
+
+.source-header {
+  margin-bottom: 20px;
+}
+
+.source-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: .08em;
+  color: var(--accent);
+  margin: 0 0 8px;
+}
+
+.source-title {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: clamp(1.5rem, 3.2vw, 2rem);
+  margin: 0 0 8px;
+}
+
+.source-intro {
+  font-family: var(--font-body);
+  color: var(--muted);
+  font-size: 1rem;
+  margin: 0;
+  max-width: 60ch;
+}
+
+.source-media {
+  background: var(--wall-2);
+  border: 1px solid var(--glass-border);
+  border-radius: 14px;
+  padding: 16px;
+  margin: 0 0 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.source-media img {
+  width: 100%;
+  max-width: 640px;
+  min-height: 320px;
+  max-height: 640px;
+  height: auto;
+  object-fit: contain;
+}
+
+@media (min-width: 700px) {
+  .source-media img {
+    min-height: 480px;
+  }
+}
+
+.source-rows {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 14px 24px;
+  margin: 0;
+}
+
+.source-rows dt {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: .04em;
+  color: var(--muted);
+  text-transform: uppercase;
+  padding-top: 2px;
+}
+
+.source-rows dd {
+  margin: 0;
+  font-size: .98rem;
+  color: var(--ink);
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.source-rows dt {
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.source-rows > dt:last-of-type,
+.source-rows > dd:last-of-type {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+@media (max-width: 700px) {
+  .source-rows {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+
+  .source-rows dt {
+    padding-bottom: 4px;
+    border-bottom: none;
+  }
+
+  .source-rows dd {
+    padding-bottom: 14px;
+    margin-bottom: 4px;
+  }
+
+  .source-rows > dt:last-of-type {
+    padding-bottom: 4px;
+  }
+}
+
 /* ---- footer ---------------------------------------------------------------- */
 
 footer {
@@ -337,5 +459,17 @@ footer {
   .pill {
     min-width: 0;
     flex: 1 1 45%;
+  }
+
+  .source {
+    padding: 18px;
+  }
+
+  .source-media {
+    padding: 10px;
+  }
+
+  .source-media img {
+    min-height: 220px;
   }
 }
