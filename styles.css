@@ -124,6 +124,7 @@ a {
 h1, h2, h3 {
   font-family: var(--font-heading);
   font-weight: 700;
+  letter-spacing: -.01em;
   margin: 0 0 12px;
   line-height: 1.15;
 }
@@ -448,7 +449,7 @@ p {
   font-family: var(--font-mono);
   font-size: 11px;
   letter-spacing: .08em;
-  color: var(--accent);
+  color: var(--muted);
   text-transform: uppercase;
   margin: 0 0 8px;
 }
@@ -467,11 +468,17 @@ p {
   margin-bottom: 28px;
 }
 
+.content-section:last-of-type {
+  margin-bottom: 0;
+}
+
 .content-section h2 {
-  margin-bottom: 16px;
+  margin: 0 0 16px;
 }
 
 .content-section p {
+  font-family: var(--font-body);
+  font-size: 1rem;
   color: var(--ink);
   max-width: 68ch;
 }
@@ -508,13 +515,15 @@ p {
   display: block;
   font-family: var(--font-mono);
   font-weight: 500;
-  font-size: .85rem;
-  letter-spacing: .02em;
-  color: var(--accent);
+  font-size: 12px;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: var(--muted);
   margin-bottom: 4px;
 }
 
 .timeline-text {
+  font-family: var(--font-body);
   margin: 0;
   color: var(--ink);
   font-size: .98rem;
@@ -540,8 +549,9 @@ p {
 
 .eval-category {
   font-family: var(--font-heading);
-  font-weight: 600;
-  font-size: 1.05rem;
+  font-weight: 700;
+  font-size: 1.15rem;
+  letter-spacing: -.01em;
   margin: 0 0 10px;
 }
 
@@ -549,7 +559,8 @@ p {
   display: inline-block;
   font-family: var(--font-mono);
   font-size: 11px;
-  letter-spacing: .03em;
+  letter-spacing: .04em;
+  text-transform: uppercase;
   color: var(--accent-ink);
   background: var(--accent);
   border-radius: 999px;
@@ -558,6 +569,7 @@ p {
 }
 
 .eval-note {
+  font-family: var(--font-body);
   margin: 0;
   color: var(--muted);
   font-size: .92rem;
