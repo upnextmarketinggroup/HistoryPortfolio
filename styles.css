@@ -437,6 +437,132 @@ p {
   }
 }
 
+/* ---- citation panel (secondary sources page) ------------------------------- */
+
+.citation-panel {
+  padding: 16px clamp(18px, 4vw, 28px);
+  margin: 0 0 32px;
+}
+
+.citation-label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: .08em;
+  color: var(--accent);
+  text-transform: uppercase;
+  margin: 0 0 8px;
+}
+
+.citation-text {
+  font-family: var(--font-mono);
+  font-size: .9rem;
+  color: var(--ink);
+  margin: 0;
+}
+
+/* ---- content sections (secondary sources page) ----------------------------- */
+
+.content-section {
+  padding: clamp(20px, 4vw, 36px);
+  margin-bottom: 28px;
+}
+
+.content-section h2 {
+  margin-bottom: 16px;
+}
+
+.content-section p {
+  color: var(--ink);
+  max-width: 68ch;
+}
+
+/* ---- timeline ---------------------------------------------------------------- */
+
+.timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.timeline li {
+  position: relative;
+  padding-left: 22px;
+  border-left: 2px solid var(--glass-border);
+}
+
+.timeline li::before {
+  content: "";
+  position: absolute;
+  left: -6px;
+  top: 4px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.timeline-date {
+  display: block;
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: .85rem;
+  letter-spacing: .02em;
+  color: var(--accent);
+  margin-bottom: 4px;
+}
+
+.timeline-text {
+  margin: 0;
+  color: var(--ink);
+  font-size: .98rem;
+}
+
+/* ---- evaluation cards ---------------------------------------------------------- */
+
+.eval-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 700px) {
+  .eval-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.eval-card {
+  padding: 20px;
+}
+
+.eval-category {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 1.05rem;
+  margin: 0 0 10px;
+}
+
+.rating-pill {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: .03em;
+  color: var(--accent-ink);
+  background: var(--accent);
+  border-radius: 999px;
+  padding: 5px 12px;
+  margin: 0 0 12px;
+}
+
+.eval-note {
+  margin: 0;
+  color: var(--muted);
+  font-size: .92rem;
+}
+
 /* ---- footer ---------------------------------------------------------------- */
 
 footer {
@@ -471,5 +597,17 @@ footer {
 
   .source-media img {
     min-height: 220px;
+  }
+
+  .content-section {
+    padding: 18px;
+  }
+
+  .citation-panel {
+    padding: 14px 16px;
+  }
+
+  .eval-card {
+    padding: 16px;
   }
 }
