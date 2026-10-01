@@ -7,6 +7,7 @@ tools or frameworks — it can be hosted directly on GitHub Pages.
 
 - `index.html` — home page
 - `about.html` — About Me page
+- `historical-question.html` — Week 4 Historical Question page
 - `styles.css` — shared styles
 - `images/` — folder for photos (see below)
 - `README.md` — this file
