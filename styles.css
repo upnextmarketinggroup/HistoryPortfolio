@@ -610,6 +610,12 @@ p {
   line-height: 1.35;
 }
 
+/* ---- source links (secondary source analyses page) ------------------------ */
+
+.source-link {
+  overflow-wrap: anywhere;
+}
+
 /* ---- footer ---------------------------------------------------------------- */
 
 footer {
