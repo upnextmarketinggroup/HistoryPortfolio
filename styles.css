@@ -616,6 +616,59 @@ p {
   overflow-wrap: anywhere;
 }
 
+/* ---- archive thumbnails (primary source analyses page) -------------------- */
+
+.source-thumb-figure {
+  flex-direction: column;
+  gap: 12px;
+  margin: 0;
+}
+
+.source-thumb {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 640px;
+  padding: clamp(20px, 5vw, 36px) 16px;
+  background: var(--wall);
+  border: 1px solid var(--glass-border);
+  border-radius: 10px;
+  color: var(--accent);
+  text-decoration: none;
+  text-align: center;
+}
+
+.source-thumb:hover,
+.source-thumb:focus-visible {
+  border-color: var(--accent);
+}
+
+.source-thumb-art {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+}
+
+.source-thumb-label {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: .04em;
+  color: var(--muted);
+  text-transform: uppercase;
+}
+
+.source-thumb-cta {
+  font-weight: 600;
+}
+
+.source-thumb-figure figcaption {
+  font-size: .88rem;
+  color: var(--muted);
+  max-width: 640px;
+}
+
 /* ---- footer ---------------------------------------------------------------- */
 
 footer {
