@@ -10,6 +10,7 @@ tools or frameworks — it can be hosted directly on GitHub Pages.
 - `historical-question.html` — Week 4 Historical Question page
 - `secondary-source-analyses.html` — Week 5 Secondary Source Analyses page
 - `primary-source-analyses.html` — Week 6 Primary Source Analyses page
+- `final-findings.html` — Final Findings page
 - `styles.css` — shared styles
 - `images/` — folder for photos (see below)
 - `README.md` — this file

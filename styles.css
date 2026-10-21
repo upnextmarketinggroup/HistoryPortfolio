@@ -717,3 +717,10 @@ footer {
     padding: 16px;
   }
 }
+
+/* ---- works cited (final findings page) ------------------------------------ */
+
+.works-cited p {
+  padding-left: 2em;
+  text-indent: -2em;
+}
